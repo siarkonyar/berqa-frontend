@@ -1,0 +1,37 @@
+nav{
+    background-color: #d3ad37;
+    padding: 0 !important;
+    position: relative;
+    height: 10vh;
+    .navbar-brand{
+        position: absolute;
+        top: 20%;
+    }
+    .navbar-nav{
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 10vh;
+        .nav-item{
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            align-items: center;
+            &.active{
+                background-color: rgba($color: #fff, $alpha: .15);
+            }
+            .nav-link{
+                color: white;
+            }
+            .language-dropdown{
+                position:absolute;
+                right: 0;
+                .btn{
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
