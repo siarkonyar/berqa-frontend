@@ -1,3 +1,6 @@
+$navbar-font: "Proxima Nova";
+$navbar-color: #d3ad37;
+
 @media (min-width: 992px) {
     .navbar-nav {
         display: flex !important;
@@ -18,11 +21,12 @@
 }
 
 nav {
-    background-color: #d3ad37;
+    box-shadow: 0 3px 20px 1px rgba($color: #000000, $alpha: 0.5);
+    background-color: $navbar-color;
     padding: 0 !important;
     position: relative;
     height: 10vh;
-    font-family: "Proxima Nova";
+    font-family: $navbar-font;
     &.show {
         position: absolute;
         width: 100%;
@@ -42,6 +46,10 @@ nav {
             flex-direction: column;
             justify-content: center;
         }
+    }
+    .hamburger {
+        display: inline-block;
+        margin-left: auto;
     }
     .navbar-brand {
         position: absolute;
@@ -75,23 +83,20 @@ nav {
     }
 }
 
-.hamburger {
-    display: inline-block;
-    margin-left: auto;
-}
-
 .navbar-socialmedia-btns {
-    display: flex !important;
     position: absolute;
     bottom: 50px;
-    list-style: none;
-    padding-left: 12px !important;
-    li {
-        margin-right: 15px;
-        a {
-            font-size: 2em;
-            color: white;
-            text-decoration: none;
+    ul {
+        display: flex !important;
+        padding-left: 12px !important;
+        list-style: none;
+        li {
+            margin-right: 15px;
+            a {
+                font-size: 2em;
+                color: white;
+                text-decoration: none;
+            }
         }
     }
 }
