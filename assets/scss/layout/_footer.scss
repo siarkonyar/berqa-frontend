@@ -30,9 +30,8 @@ $footer-color: #d3ad37;
 footer {
     color: white;
     font-family: $footer-font;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +45,7 @@ footer {
     }
     .footer-reach-us{
         padding-left: 0;
-        margin-top: 30px;
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -54,6 +53,7 @@ footer {
         li {
             margin-right: 0px;
             margin-bottom: 10px;
+            text-align: center;
             a {
                 color: white;
                 text-decoration: none;
@@ -67,7 +67,10 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 20px;
+        p{
+            text-align: center;
+        }
         .socialmedia-btns {
             list-style: none;
             display: flex !important;
@@ -83,5 +86,6 @@ footer {
     }
     .copyright{
         margin-top: 30px;
+        text-align: center;
     }
 }

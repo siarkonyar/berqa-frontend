@@ -14,23 +14,21 @@ $navbar-color: #d3ad37;
     .hamburger {
         display: none !important;
     }
-
-    .navbar-socialmedia-btns {
-        display: none !important;
-    }
 }
 
 nav {
     box-shadow: 0 3px 20px 1px rgba($color: #000000, $alpha: 0.5);
     background-color: $navbar-color;
     padding: 0 !important;
+    margin-bottom: 60px;
     position: relative;
     height: 10vh;
     font-family: $navbar-font;
+    z-index: 3;
     &.show {
-        position: absolute;
+        position: fixed;
         width: 100%;
-        height: 100%;
+        height: 100vh !important;
         margin: 0;
         .hamburger {
             position: absolute !important;
@@ -45,6 +43,9 @@ nav {
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+        .navbar-socialmedia-btns{
+            display: inline-block;
         }
     }
     .hamburger {
@@ -62,13 +63,15 @@ nav {
         height: 10vh;
         display: none;
         .nav-item {
-            padding-left: 15px;
-            padding-right: 15px;
-            display: flex;
-            align-items: center;
             background-color: transparent;
             .nav-link {
+                padding-left: 15px;
+                padding-right: 15px;
                 color: white;
+                width: 100% !important;
+                height: 100% !important;
+                display: flex;
+                align-items: center;
             }
             .language-dropdown {
                 position: absolute;
@@ -81,21 +84,22 @@ nav {
             }
         }
     }
-}
 
-.navbar-socialmedia-btns {
-    position: absolute;
-    bottom: 50px;
-    ul {
-        display: flex !important;
-        padding-left: 12px !important;
-        list-style: none;
-        li {
-            margin-right: 15px;
-            a {
-                font-size: 2em;
-                color: white;
-                text-decoration: none;
+    .navbar-socialmedia-btns {
+        position: absolute;
+        bottom: 50px;
+        display: none;
+        ul {
+            display: flex !important;
+            padding-left: 12px !important;
+            list-style: none;
+            li {
+                margin-right: 15px;
+                a {
+                    font-size: 2em;
+                    color: white;
+                    text-decoration: none;
+                }
             }
         }
     }
