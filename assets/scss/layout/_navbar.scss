@@ -23,7 +23,6 @@ nav {
     margin-bottom: 60px;
     position: relative;
     height: 10vh;
-    font-family: $navbar-font;
     z-index: 3;
     &.show {
         position: fixed;
@@ -46,6 +45,10 @@ nav {
         }
         .navbar-socialmedia-btns{
             display: inline-block;
+        }
+        &~section,
+        &~footer{
+            display: none !important;
         }
     }
     .hamburger {

@@ -1,0 +1,84 @@
+#contact-us{
+    .contact-us-card {
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 40px;
+        .contact-us-text{
+            p{
+                margin-bottom: 30px;
+            }
+        }
+        .contact-us-input {
+            margin-bottom: 15px;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 27px;
+            border-color: #acacac;
+            &::placeholder {
+                color: #acacac;
+            }
+            &:hover {
+                border-color: #d3ac38;
+                &::placeholder {
+                    color: #d3ac38;
+                }
+            }
+            &:focus {
+                border-color: #d3ac38;
+                box-shadow: none;
+                &::placeholder {
+                    color: #d3ac38;
+                }
+            }
+        }
+        .contact-us-dropdown {
+            width: 100%;
+            margin-bottom: 15px;
+            #dropdownMenuButton {
+                padding-right: 30px;
+                padding-left: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 27px;
+                border-color: #acacac;
+                background-color: transparent;
+                color: #acacac;
+                &:hover {
+                    border-color: #d3ac38;
+                    color: #d3ac38;
+                }
+                &:focus {
+                    border-color: #d3ac38;
+                    box-shadow: none;
+                    color: #d3ac38;
+                }
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: start;
+                }
+            }
+            .dropdown-menu {
+                width: 100%;
+                border-radius: 27px;
+                overflow: hidden;
+                background-color: #d4af37;
+                .dropdown-item {
+                    color: white;
+                    &:hover {
+                        background-color: #dabb55;
+                    }
+                    &:focus {
+                        background-color: #dabb55;
+                    }
+                    &:active {
+                        background-color: #dabb55;
+                    }
+                }
+            }
+        }
+    }
+}

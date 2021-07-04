@@ -1,5 +1,3 @@
-$change-your-mood-header-font: "Centurion";
-
 @media (min-width:992px) {
     #change-your-mood {
         .tealeaf {
@@ -16,11 +14,6 @@ $change-your-mood-header-font: "Centurion";
     .change-your-mood-text {
         position: relative;
         z-index: 1;
-        .change-your-mood-header {
-            font-family: $change-your-mood-header-font;
-            font-size: 35px;
-            text-align: center;
-        }
     }
     .tealeaf {
         display: none;
