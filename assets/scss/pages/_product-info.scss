@@ -1,0 +1,85 @@
+@media (min-width: 992px) {
+    #product-info {
+        .product-info {
+            flex-direction: row !important;
+            .product-info-imgs {
+                width: 50% !important;
+            }
+            .product-info-text {
+                width: 50% !important;
+                margin-left: 50px;
+                .product-info-sticker{
+                    width: 137px !important;
+                    top: -60px !important;
+                }
+            }
+            .product-info-orange{
+                position: absolute !important;
+                bottom: 0%;
+                right: 0;
+            }
+        }
+    }
+}
+
+#product-info {
+    overflow: visible !important;
+    background-image: url(/assets/img/backgroung/product-detail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    .product-info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .product-info-imgs {
+            width: 100%;
+            .product-info-img {
+                img {
+                    width: 100% !important;
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                }
+                .product-info-alt-imgs {
+                    display: flex;
+                    justify-content: space-between;
+                    .product-info-alt-img {
+                        height: fit-content;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        width: 23%;
+                        text-align: center;
+                        img {
+                            border: 1px solid #efefef;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .product-info-text {
+            padding-top: 35px;
+            width: 100%;
+            header {
+                position: relative;
+                h2 {
+                    text-align: left !important;
+                }
+            }
+            .product-info-sticker {
+                position: absolute;
+                top: 0px;
+                right: 0%;
+                width: 50px;
+                img{
+                    width: 50px !important;
+                }
+            }
+        }
+        .product-info-orange{
+            position: relative;
+            margin-left: auto;
+            margin-top: 20px;
+        }
+    }
+}
