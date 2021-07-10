@@ -1,0 +1,164 @@
+$about-us-card-header-font: "Centurion";
+
+@media (min-width: 992px) {
+    #about-us {
+        header {
+            margin-bottom: 75px;
+            .about-us-tea-leaf-1 {
+                display: inline-block !important;
+                position: absolute;
+                top: 25%;
+                right: 0;
+                z-index: -1;
+                overflow: hidden !important;
+                img {
+                    transform: translate(30%, 0);
+                }
+            }
+        }
+        .about-us-cards {
+            .about-us-card-1 {
+                margin-bottom: 60px !important;
+                .about-us-card-img {
+                    margin-right: 90px;
+                    width: 40% !important;
+                }
+            }
+            .about-us-card-2 {
+                margin-bottom: 60px !important;
+                .about-us-card-img {
+                    margin-left: 90px;
+                    width: 40% !important;
+                }
+                .about-us-tea-leaf-2 {
+                    display: inline-block !important;
+                }
+            }
+            .about-us-card-3 {
+                margin-bottom: 60px;
+                flex-direction: row !important;
+                .about-us-card-img {
+                    width: 40% !important;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .about-us-card-text {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+#about-us {
+    header {
+        margin-bottom: 40px !important;
+        .about-us-tea-leaf-1 {
+            display: none;
+        }
+    }
+    .about-us-card-img {
+        margin-bottom: 20px;
+    }
+    .about-us-card-text {
+        .about-us-card-header {
+            font-size: 35px;
+            font-family: $about-us-card-header-font;
+        }
+    }
+    .about-us-cards {
+        .about-us-card-1 {
+            margin-bottom: 40px;
+            .about-us-card-img {
+                width: 100%;
+                float: left;
+                img {
+                    width: 100%;
+                }
+            }
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+        .about-us-card-2 {
+            margin-bottom: 40px;
+            .about-us-card-img {
+                float: right;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .about-us-tea-leaf-2 {
+                display: none;
+                position: absolute;
+                left: 0px;
+                overflow: hidden;
+                z-index: -1;
+                img {
+                    transform: translate(-25%, 0);
+                }
+            }
+        }
+        .about-us-card-3 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            .about-us-card-img {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .about-us-card-text{
+                .about-us-videos {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .about-us-video {
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        text-decoration: none;
+                        color: black;
+                        display: inline-block;
+                        .about-us-video-img {
+                            position: relative;
+                            margin-bottom: 10px;
+                            .video-img-overlay {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba($color: #000000, $alpha: 0.2);
+                                opacity: 0;
+                                img {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+                            }
+                        }
+                        &:hover{
+                            .about-us-video-img {
+                                .video-img-overlay {
+                                    opacity: 1;
+                                    transition: all .5s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
