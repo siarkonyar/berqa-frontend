@@ -20,21 +20,13 @@ $about-us-card-header-font: "Centurion";
             .about-us-card-1 {
                 margin-bottom: 60px !important;
                 .about-us-card-img {
-                    margin-right: 90px;
-                    width: 40% !important;
-                }
-            }
-            .about-us-card-2 {
-                margin-bottom: 60px !important;
-                .about-us-card-img {
-                    margin-left: 90px;
                     width: 40% !important;
                 }
                 .about-us-tea-leaf-2 {
                     display: inline-block !important;
                 }
             }
-            .about-us-card-3 {
+            .about-us-card-2 {
                 margin-bottom: 60px;
                 flex-direction: row !important;
                 .about-us-card-img {
@@ -72,22 +64,6 @@ $about-us-card-header-font: "Centurion";
             margin-bottom: 40px;
             .about-us-card-img {
                 width: 100%;
-                float: left;
-                img {
-                    width: 100%;
-                }
-            }
-            &::after {
-                content: "";
-                display: block;
-                clear: both;
-            }
-        }
-        .about-us-card-2 {
-            margin-bottom: 40px;
-            .about-us-card-img {
-                float: right;
-                width: 100%;
                 img {
                     width: 100%;
                 }
@@ -108,7 +84,7 @@ $about-us-card-header-font: "Centurion";
                 }
             }
         }
-        .about-us-card-3 {
+        .about-us-card-2 {
             display: flex;
             flex-direction: column;
             margin-bottom: 40px;
