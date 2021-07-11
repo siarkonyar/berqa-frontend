@@ -7,12 +7,16 @@ body {
     section {
         overflow: hidden !important;
         padding-bottom: 30px;
+        padding-top: 30px;
         header {
+            font-family: $header-font;
             h2 {
-                font-family: $header-font;
                 font-size: 35px;
                 text-align: center;
                 margin-bottom: 25px;
+            }
+            p {
+                font-family: $body-font;
             }
         }
     }

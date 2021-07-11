@@ -81,6 +81,67 @@
         </div>
     </nav>
 
+    <section id="media-item">
+        <div class="container-lg">
+            <div class="media-item">
+                <div class="media-item-img">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="assets/img/media/media-info-img.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/media/media-info-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="media-item-text">
+                    <div class="date-share">
+                        <div class="date">
+                            27.08.2020
+                        </div>
+                        <div class="share">
+                            <div class="dropdown">
+                                <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-share"></i>
+                                    Paylaş
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <header>
+                        <h4 class="text-start mb-4">
+                            Ünsiyyətin ən gözəl yolu
+                        </h4>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+                            sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                            generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                            first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+                            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+                            non-characteristic words etc.
+                        </p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-brand">
             <img src="assets/img/logo/logo.png" alt="">
@@ -178,8 +239,8 @@
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
-            nav: false,
-            dots: true,
+            nav: true,
+            dots: false,
             responsive: {
                 0: {
                     items: 1
