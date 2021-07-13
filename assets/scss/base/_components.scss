@@ -5,24 +5,28 @@
 }
 
 .yellow-btn {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 27px;
-    border: 1px solid;
-    border-color: #d3ac38;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-radius: 27px !important;
+    border: 1px solid !important;
+    border-color: #d3ac38 !important;
     color: #d3ac38;
-    background-color: transparent;
-    font-weight: 500;
+    background-color: transparent !important;
+    font-weight: 500 !important;
     &:hover {
-        background-color: #d3ac38;
-        color: white;
+        background-color: #d3ac38 !important;
+        a {
+            color: white !important;
+        }
     }
     &:focus {
-        background-color: #d3ac38;
-        color: white;
-        box-shadow: none;
+        background-color: #d3ac38 !important;
+        box-shadow: none !important;
+        a {
+            color: white !important;
+        }
     }
     a {
         color: #d3ac38;
@@ -37,7 +41,7 @@
     padding-bottom: 10px !important;
     border-radius: 27px !important;
     border: 1px solid !important;
-    border-color: white;
+    border-color: white !important;
     color: white !important;
     background-color: transparent;
     font-weight: 500;
@@ -45,7 +49,7 @@
         box-shadow: none !important;
     }
     a {
-        color: white;
+        color: white !important;
         text-decoration: none;
     }
 }

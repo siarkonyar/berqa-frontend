@@ -1,33 +1,32 @@
 $home-header-font: "Proxima Nova";
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     #home {
         section {
-            header {
-                .header-img {
-                    img{
-                        display: inline-block !important;
-                    }
-                    .header-text {
-                        background: transparent !important;
-                        position: absolute !important;
-                        width: 100% !important;
-                        height: 100% !important;
-                        bottom: 40px !important;
-                        .header-text-inner {
-                            position: absolute !important;
-                            left: 50% !important;
-                            width: 500px !important;
-                            bottom: 10px !important;
-                            transform: translate(-50%, 0) !important;
-                            p {
-                                margin-bottom: 40px !important;
-                            }
-                            button {
-                                display: inline-block !important;
-                            }
+            .home-header {
+                .header-text {
+                    .header-text-inner {
+                        width: 500px !important;
+                        button {
+                            display: inline-block !important;
                         }
                     }
+                }
+            }
+            .home-media {
+                .home-media-card {
+                    display: flex !important;
+                    .home-media-card-img {
+                        width: 40% !important;
+                    }
+                    .home-media-card-text {
+                        width: 60% !important;
+                        padding-left: 30px;
+                        padding-top: 100px !important;
+                    }
+                }
+                .home-media-btn {
+                    display: inline-block !important;
                 }
             }
         }
@@ -41,35 +40,130 @@ $home-header-font: "Proxima Nova";
     }
     section {
         padding-top: 0 !important;
-        header {
-            .header-img {
-                min-height: 270px;
+        .home-header {
+            background-image: url("/assets/img/backgroung/home-background-woman.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            height: 600px;
+            .header-text {
                 position: relative;
-                img {
+                color: white;
+                font-family: $home-header-font;
+                width: 100% !important;
+                height: 100% !important;
+                padding-top: 50px;
+                padding-bottom: 30px;
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(80, 64, 15, 0.9) 100%);
+                .header-text-inner {
+                    position: absolute;
                     width: 100%;
-                    display: none;
+                    bottom: 30px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    button {
+                        display: none;
+                    }
                 }
-                .header-text {
-                    background-image: url("/assets/img/backgroung/home-background-woman.png");
-                    background-position: bottom;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    padding-top: 50px;
-                    padding-bottom: 30px;
-                    position: relative;
-                    text-align: center;
-                    color: white;
-                    font-family: $home-header-font !important;
-                    .header-text-inner {
-                        p {
-                            width: 100% !important;
-                            margin-bottom: 10px;
-                        }
-                        button {
-                            display: none;
+            }
+        }
+        .home-products {
+            background-color: #f7f7f7;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+            .owl-carousel {
+                .owl-nav {
+                    display: flex;
+                    justify-content: center;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    .owl-prev,
+                    .owl-next {
+                        color: #d4af37;
+                        border: 1px solid #d4af37;
+                        border-radius: 50%;
+                        padding: 10px 15px !important;
+                        font-size: 20px;
+                        &:hover,
+                        &:active {
+                            color: white;
+                            background-color: #d4af37;
                         }
                     }
                 }
+                .owl-dots {
+                    display: none;
+                }
+            }
+        }
+        .home-media {
+            background-image: url("/assets/img/backgroung/home-media.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .home-media-card {
+                display: inline-block;
+                .home-media-card-img {
+                    width: 100%;
+                }
+                .home-media-card-text {
+                    padding-top: 50px;
+                    width: 100%;
+                }
+            }
+            .home-media-btn {
+                text-align: center;
+                margin-top: 50px;
+                display: none;
+                width: 100%;
+            }
+            .owl-carousel {
+                .owl-nav {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    transform: translate(0, -50%);
+                    .owl-prev,
+                    .owl-next {
+                        color: #d4af37;
+                        border: 1px solid #d4af37;
+                        border-radius: 50%;
+                        padding: 10px 15px !important;
+                        font-size: 20px;
+                        &:hover,
+                        &:active {
+                            color: white;
+                            background-color: #d4af37;
+                        }
+                    }
+                }
+                .owl-dots {
+                    display: none;
+                }
+            }
+            .home-media-tea-leaf-1{
+                position: absolute;
+                top: -100px;
+                left: -30px;
+            }
+            .home-media-tea-leaf-2{
+                position: absolute;
+                bottom: -90px;
+                right: -30px;
             }
         }
     }
