@@ -22,6 +22,31 @@
     &:focus {
         background-color: #d3ac38;
         color: white;
+        box-shadow: none;
+    }
+    a {
+        color: #d3ac38;
+        text-decoration: none;
+    }
+}
+
+.white-btn {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-radius: 27px !important;
+    border: 1px solid !important;
+    border-color: white;
+    color: white !important;
+    background-color: transparent;
+    font-weight: 500;
+    &:focus {
+        box-shadow: none !important;
+    }
+    a {
+        color: white;
+        text-decoration: none;
     }
 }
 

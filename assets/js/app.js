@@ -18,3 +18,18 @@ menuBtn.addEventListener("click", () => {
 $(document).ready(function () {
   $(".dropdown-toggle").dropdown();
 });
+
+const nextIcon = '<i class="bi bi-chevron-right"></i>';
+const prevIcon = '<i class="bi bi-chevron-left"></i>';
+
+$('.owl-carousel').owlCarousel({
+  navText:[
+    prevIcon,
+    nextIcon
+  ],
+  responsive: {
+      0: {
+          items: 1
+      },
+  }
+})

@@ -1,0 +1,76 @@
+$home-header-font: "Proxima Nova";
+
+@media (min-width: 576px) {
+    #home {
+        section {
+            header {
+                .header-img {
+                    img{
+                        display: inline-block !important;
+                    }
+                    .header-text {
+                        background: transparent !important;
+                        position: absolute !important;
+                        width: 100% !important;
+                        height: 100% !important;
+                        bottom: 40px !important;
+                        .header-text-inner {
+                            position: absolute !important;
+                            left: 50% !important;
+                            width: 500px !important;
+                            bottom: 10px !important;
+                            transform: translate(-50%, 0) !important;
+                            p {
+                                margin-bottom: 40px !important;
+                            }
+                            button {
+                                display: inline-block !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#home {
+    margin-top: 0;
+    nav {
+        margin-bottom: 0 !important;
+    }
+    section {
+        padding-top: 0 !important;
+        header {
+            .header-img {
+                min-height: 270px;
+                position: relative;
+                img {
+                    width: 100%;
+                    display: none;
+                }
+                .header-text {
+                    background-image: url("/assets/img/backgroung/home-background-woman.png");
+                    background-position: bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    padding-top: 50px;
+                    padding-bottom: 30px;
+                    position: relative;
+                    text-align: center;
+                    color: white;
+                    font-family: $home-header-font !important;
+                    .header-text-inner {
+                        p {
+                            width: 100% !important;
+                            margin-bottom: 10px;
+                        }
+                        button {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
