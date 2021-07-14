@@ -55,7 +55,7 @@ $(document).ready(function () {
       },
     },
   });
-  $("#media-item").owlCarousel({
+  $("#media-item-carousel").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
